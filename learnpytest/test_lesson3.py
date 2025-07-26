@@ -3,4 +3,4 @@ import pytest
 class Test_load:
     def test_loaddata(self,dataload):
         print(dataload)
-        print(dataload[0])
+        print(dataload[1])
