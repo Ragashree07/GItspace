@@ -4,11 +4,11 @@ def test_greet1():
 
 @pytest.mark.scope
 def test_greet2():
-    print("Hi mama")
+    print("Hi sona")
 
 @pytest.mark.skip
 def test_inexecute():
-    print("Do not execute")
+    print("Do not execute this case")
 
 @pytest.mark.xfail
 def test_noresult():
