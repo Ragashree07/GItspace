@@ -1,6 +1,3 @@
-import pytest
-@pytest.mark.usefixtures("dataload")
-class Test_load:
-    def test_loaddata(self,dataload):
-        print(dataload)
-        print(dataload[1])
+def reverse(n):
+        return n[::-1]
+print(reverse([1,2,3,4]))
