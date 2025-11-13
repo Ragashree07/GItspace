@@ -1,15 +1,6 @@
-import pytest
-def test_greet1():
-    print("Hi Nana")
-
-@pytest.mark.scope
-def test_greet2():
-    print("Hi sona")
-
-@pytest.mark.skip
-def test_inexecute():
-    print("Do not execute this case")
-
-@pytest.mark.xfail
-def test_noresult():
-    print("This is xfailed for a reason")
+def dups(n):
+    dc={}
+    for x in n:
+        dc[x]=dc.get(x,0)+1
+    return dc
+print(dups([1,1,2,3,4,4]))
